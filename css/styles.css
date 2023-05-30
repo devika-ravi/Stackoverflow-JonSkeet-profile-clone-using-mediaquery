@@ -1,0 +1,998 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+/*Whole body*/
+body {
+	font-family: apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans", sans-serif;
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid whitesmoke;
+	background-color: #f8f9f9;
+	z-index: 1;
+
+}
+
+.header img {
+	cursor: pointer;
+}
+
+.header:hover {
+	background-color: #e3e6e8;
+}
+
+.headerRest {
+	display: flex;
+	align-items: center;
+	background-color: #f8f9f9;
+	padding-left: 35px;
+	padding-right: 50px;
+	box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+	border-top: 3px solid #f48225;
+}
+
+.headerRest img {
+	width: 24px;
+	background-color: #f8f9f9;
+	padding: 1px 5px;
+}
+
+.logoImage img {
+	width: 150px;
+}
+
+.headerRest span {
+	font-size: 12px;
+	padding: 10px;
+	cursor: pointer;
+	background-color: #f8f9f9;
+}
+
+.products {
+	margin: 0 8px;
+	font-size: 14px;
+	padding: 0 0 2px 0;
+	background-color: #f8f9f9;
+	opacity: 0.7;
+}
+
+.products:hover {
+	border-style: hidden;
+	background-color: #e3e6e8;
+	border-radius: 20px;
+}
+
+.headerRest img:hover {
+	border-style: hidden;
+	background-color: #e3e6e8;
+}
+
+.headerProfile {
+	display: flex;
+	align-items: center;
+	margin: 0 20px 0 12px;
+	background-color: #f8f9f9;
+	border-style: hidden;
+}
+
+.headerProfile img {
+	width: 24px;
+}
+
+.headerProfile b {
+	text-align: justify;
+	font-size: 12px;
+}
+
+.headerProfile:hover {
+	cursor: pointer;
+	background-color: #e3e6e8;
+	border-style: hidden;
+}
+
+.headerSearch {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	border: 1px solid rgba(129, 129, 129, 0.5);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	padding: 1px;
+	color: white;
+	background-color: white;
+}
+
+.headerSearch img {
+	width: 16px;
+	padding: 5px;
+	background-color: transparent;
+}
+
+.headerSearch input {
+	border: none;
+	height: 24px;
+	width: 700px;
+	padding: 10px;
+	outline: none;
+	background-color: transparent;
+	display: inline-block;
+	padding: 1px;
+}
+
+.headerSearch:active {
+	border-color: #2093c3;
+	box-shadow: 0px 0px 8px #8acbde;
+}
+
+.headerSearch input:focus {
+	box-shadow: 0px 0px 8px #8acbde;
+}
+
+/*Main body */
+.mainBody {
+	display: flex;
+}
+
+/*Sidebar*/
+.sidebar {
+	position: sticky;
+	top: 50px;
+	height: 500px;
+	flex: 0.3;
+	max-width: 164px;
+	padding-left: 35px;
+	font-size: 12px;
+	border-right: 1px solid rgba(129, 129, 129, 0.2);
+}
+
+.sidebarOption {
+	display: flex;
+	align-items: end;
+	padding: 5px 10px 10px 10px;
+	cursor: pointer;
+	color: #818181;
+}
+
+.sidebarOption img {
+	padding-top: 10px;
+	width: 22px;
+}
+
+
+.sidebarOptionActive, .sidebarOptionActive img {
+	background-color: #f1f2f3;
+	color: black;
+	font-weight: bolder;
+}
+
+.sidebarOption:hover {
+	color: black;
+}
+
+.sidebarOptionActive{
+	border-right: 3px solid #f48225;
+}
+
+.home {
+	padding-top: 25px;
+}
+
+.public {
+	padding-top: 7px;
+	font-size: 11px;
+}
+
+.optionWithLeftImg img {
+	width: 16px;
+	padding: 0 5px 5px 5px;
+}
+
+.sideWithInfoImg {
+	padding-top: 10px;
+}
+
+.sideWithInfoImg img {
+	width: 12px;
+}
+
+.questionSide, .collectivesSection, .exploreCollectives, .teamsSection, .createFreeTeam {
+	font-size: 13px;
+	padding-top: 1px;
+	padding-right: 2px;
+}
+
+.collectives {
+	padding-right: 55px;
+}
+
+.teams {
+	padding-right: 85px;
+}
+
+.tags, .users, .companies {
+	padding-left: 25px;
+}
+
+.collectivesSection {
+	font-size: 11px;
+	display: flex;
+	align-items: center;
+}
+
+.teamsSection {
+	font-size: 11px;
+	display: flex;
+	align-items: center;
+}
+
+.exploreCollectives {
+	padding-top: 5px;
+}
+
+.sidebarOptionActive {
+	border-right: 3px solid #f48225;
+}
+
+.sidebarOption p {
+	color: #0066ff;
+	padding-top: 25px;
+	margin-left: 8px;
+	font-size: 12px;
+}
+
+/* Rest of the body */
+.restBodyHead {
+	flex: 1;
+	padding-left: 15px;
+}
+
+.restBody {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px whitesmoke;
+	background-color: white;
+	margin: 8px;
+	padding-right: 50px;
+}
+
+.restBodyLeft {
+	margin: 20px 10px 0 0;
+	border-radius: 10%;
+	box-shadow: 1px 0px 5px 0px rgb(220, 225, 228);
+}
+
+.restBodyLeft img {
+	width: 120px;
+}
+
+.box {
+	width: 400px;
+	padding: 0 100px 0 10px;
+	margin-right: auto;
+}
+
+.name {
+	margin-top: 20px;
+	padding-right: 100px;
+	font-weight: 400;
+	font-size: xx-large;
+}
+
+.iconDescription {
+	font-size: 12px;
+	font-weight: 400;
+	color: gray;
+	padding-left: 5px;
+	margin-right: 10px;
+}
+
+.nameBodyOption {
+	display: flex;
+	color: grey;
+	margin-top: 5px;
+	padding-bottom: 12px;
+}
+
+.nameBodyOption img {
+	width: 18px;
+}
+
+.localBodyOption {
+	display: flex;
+	color: grey;
+	margin-left: 1px;
+}
+
+.localBodyOption img {
+	width: 18px;
+}
+
+#twitterLogo , #githubLogo {
+	cursor: pointer;
+}
+
+.dropDown {
+	display: inline-block;
+}
+
+.dropButton { 
+	background-color: transparent;	
+	color: rgba(129, 129, 129);
+	padding: 8px;
+	font-size: 12px;
+	cursor: pointer;
+	border: 1px solid rgba(129, 129, 129, 0.4);
+	box-shadow: 0px 0px 10px gray;
+	border-radius: 3px;
+	margin-top: 10px;
+}
+
+.dropButton {
+	background-color: #e3e6e8;
+}
+.listSection {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.list {
+	display: flex;
+	cursor: pointer;
+}
+
+#profile, #activity {
+	margin-left: 10px;
+	padding: 7px 10px 7px 10px;
+	border: none;
+	outline: none;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+#profile {
+	color: white;
+	background-color: #f48225;
+}
+
+#activity {
+	color: gray;
+	background-color: white;
+}
+
+#profile:hover {
+	background-color: #de741d;
+}
+
+#activity:hover {
+	background-color: #e3e6e8;
+}
+
+.statHead {
+	color: hsl(210,8%,15%);
+	font-size: 21px;
+	margin-left: 10px;
+}
+
+.aboutHead {
+	padding-left: 202px;
+}
+
+.statUser {
+	display: flex;
+	margin-top: 15px;
+}
+
+.statsTable {
+	width: 140px;
+	margin-left: 10px;
+	margin-right: 18px;
+	padding-right: 80px;
+	border: 1px solid rgba(129, 129, 129, 0.2);
+	border-radius: 5px;
+}
+
+.statTableNumbers, .statTableTexts {
+	display: flex;
+}
+
+.statTableTexts {
+	font-size: 13px;
+	color: #818181;
+}
+
+.statNumberLeft  {
+	padding: 10px 20px 0px 20px;
+}
+
+.textNumberLeft {
+	padding: 0px 20px 5px 20px;
+}
+
+.statNumberRight {
+	padding: 10px 7px 0px 0px;
+}
+
+.textNumberRight {
+	padding: 0px 7px 5px 10px;
+}
+
+.statsTable img {
+	padding-left: 20px;
+	padding-top: 10px;
+	width: 24px;
+}
+
+.statPercent {
+	display: flex;
+	align-items: center;
+	font-size: 13px;
+	color: #818181;
+	margin-left: 20px;
+	padding-bottom: 15px;
+	cursor: pointer;
+}
+
+.statPercent p {
+	font-weight: bolder;
+}
+
+.collectiveHead {
+	color:  hsl(210,8%,15%);
+	font-size: 21px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.collectiveTable {
+	width: 220px;
+	display: flex;
+	align-items: center;
+	color: hsl(210,8%,15%);
+	padding: 12px 0px 12px 10px;
+	border: 1px solid rgba(129, 129, 129, 0.2);
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.collectiveTable img:hover {
+	cursor: pointer;
+}
+
+.collectiveCompany {
+	font-size: 15px;
+	padding-left: 5px;
+	cursor: pointer;
+}
+
+.collectiveJob {
+	font-size: 12px;
+	padding-left: 5px;
+	cursor: pointer;
+}
+
+.aboutUser {
+	color: hsl(210,8%,15%);
+	padding-left: 11px;
+}
+
+.info {
+	padding-top: 1px;
+}
+
+.infoSpace {
+	padding: 10px 0;
+}
+
+.ulPadding {
+	padding: 0 0 20px 30px;
+}
+
+.infoLi {
+	padding-top: 10px;
+}
+
+.li {
+	padding-top: 10px;
+}
+
+a:visited {
+	color: #0063bf;
+}
+
+.viewSpace {
+	padding-left: 40px;
+	color: #818181;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.viewSpace img {
+	width: 12px;
+}
+
+.viewAllIcon {
+	width: 30x;
+}
+
+.communitySpace {
+	padding-left: 20px;
+}
+
+.communityView {
+	padding-left: 585px;
+	color: #818181;
+	font-size: 12.5px;
+	cursor: pointer;
+}
+
+.communityBadge {
+	display: flex;
+}
+
+.community {
+	width: 160px;
+	margin-top: 20px;
+	margin-right: 20px;
+	padding: 5px 60px 5px 10px;
+	border: 1px solid rgba(129, 129, 129, 0.2);
+	border-radius: 5px;
+	font-size: 13px;
+}
+
+.community img {
+	padding-top: 2px;
+	width: 20px;
+}
+
+.communityLine {
+	display: flex;
+	align-items: center;
+	padding-bottom: 3px;
+	width: 230px;
+	cursor: pointer;
+}
+
+.communityLine img {
+	text-align: justify;
+	padding-top: 5px;
+}
+
+.communityOption {
+	text-align: center;
+	color: #0074cc;
+}
+
+.stackNumber {
+	padding-left: 70px;
+	color: #818181;
+}
+
+.metaNumber {
+	padding-left: 33px;
+	color: #818181;
+}
+
+.superNumber {
+	padding-left: 100px;
+	color: #818181;
+}
+
+.serverNumber {
+	padding-left: 95px;
+	color: #818181;
+}
+
+.softwareNumber {
+	padding-left: 40px;
+	color: #818181;
+}
+
+
+.badges {
+	width: 210px;
+	padding-right: 12px;
+	margin-top: 21px;
+	margin-right: 40px;
+	border: 1px solid rgba(129, 129, 129, 0.2);
+	border-radius: 5px;
+}
+
+.gold, .silver, .bronze {
+	display: flex;
+	padding: 10px;
+}
+
+.gold img, .silver img, .bronze img {
+	width: 50px;
+	padding: 5px;
+}
+
+.goldSub, .silverSub, .bronzeSub{
+	margin-left: 7px;
+	padding-top: 3px;
+}
+
+.badgeNumber {
+	font-size: 21px;
+	font-weight: 500;
+}
+
+.badgeText {
+	font-size: small;
+}
+
+.buttonBadge {
+	display: flex;
+	width: 200px;
+	margin: 3px 0 3px 7px;
+	text-align: right;
+}
+
+.buttonBadge button {
+	padding: 0 5px;
+	cursor: pointer;
+	align-items: center;
+	border-color: rgba(129, 129, 129, 0.7);
+	border-radius: 4px;
+	border-width: 1px;
+	margin: 0 15px 5px 0;
+	color: #818181;
+	font-size: 11px;
+}
+.dotGold {
+	font-size: 18px;
+	color: #FFD700;
+}
+
+.dotSilver {
+	font-size: 18px;
+	color: #c0c0c0;
+}
+
+.dotBronze {
+	font-size: 18px;
+	color: #d1a684;
+}
+
+.badgeSpaceExtensionMethods {
+	margin-left: 20px;
+	font-size: 10px;
+}
+
+.badgeSpaceProperties {
+	margin-left: 61px;
+	font-size: 10px;
+}
+
+.badgeSpaceDelegates {
+	margin-left: 62px;
+	font-size: 10px;
+}
+
+.badgeSpaceOverloading {
+	margin-left: 42px;
+	font-size: 10px;
+}
+
+.badgeSpaceOperators {
+	margin-left: 52px;
+	font-size: 10px;
+}
+
+.badgeSpaceOverriding {
+	margin-left: 51px;
+	font-size: 10px;
+}
+
+.badgeSpaceNetworkstream {
+	margin-left: 30px;
+	font-size: 10px;
+}
+
+.badgeSpaceNumberFormatting {
+	margin-left: 11px;
+	font-size: 10px;
+}
+
+.badgeSpaceGregorianCalendar {
+	margin-left: 9px;
+	font-size: 10px;
+}
+
+.topTag {
+	padding: 20px 0 5px 263px;
+	font-size: 21px;
+}
+
+.topTagSpace {
+	padding-left: 590px;
+	color: #818181;
+	font-size: 12.5px;
+	cursor: pointer;
+}
+
+.topTagTable {
+	/*border-collapse: collapse;*/
+	width: 741px;
+	border: 1px solid rgba(129, 129, 129, 0.2);
+	border-radius: 7px;
+	z-index: 10;
+	margin: 5px 0 0 260px;
+}
+
+.topTagTable td {
+	padding: 5px;
+	border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+}
+
+.tagStart {
+	display: flex;
+	cursor: pointer;
+}
+
+.tag {
+	margin: 5px;
+}
+
+.tag button {
+	color: #2c5ca2;
+	background-color: #e1ecf4;
+	border: hidden;
+	border-radius: 3px;
+	padding: 4px 5px;
+	cursor: pointer;
+}
+
+.tag button:hover {
+	background-color: #d0e3f1;
+}
+
+.tagText {
+	color: #6a737c;
+	font-size: 13px;
+	padding-right: 10px;
+}
+
+
+.topPostFlex {
+	display: flex;
+}
+
+.topPost {
+	padding: 20px 0 5px 263px;
+	font-size: 21px;
+}
+
+.topPost p {
+	font-size: 13px;
+}
+
+.topPost {
+	width: 300px;
+}
+
+.blue {
+	color: #0074cc;
+	cursor: pointer;
+}
+
+.topPostButtonTableOne {
+	border-collapse: collapse;
+	width: 195px;
+	border: 1px solid rgba(129, 129, 129, 0.2);
+	border-radius: 4px;
+	z-index: 10;
+	margin: 37px 0 0 139px;
+	font-size: 11px;
+	color: #6a737c;
+	cursor: pointer;
+}
+
+.topPostButtonTableOne td {
+	padding: 5px;
+	border: 1px solid rgba(129, 129, 129, 0.2);
+}
+
+.topPostButtonTableTwo {
+	border-collapse: collapse;
+	width: 95px;
+	border: 1px solid rgba(129, 129, 129, 0.2);
+	border-radius: 4px;
+	z-index: 10;
+	margin: 37px 0 0 10px;
+	font-size: 11px;
+	color: #6a737c;
+	cursor: pointer;
+}
+
+.topPostButtonTableTwo td {
+	padding: 5px;
+	border: 1px solid rgba(129, 129, 129, 0.2);
+}
+
+.dark {
+	background-color: #e3e6e8;
+	color: black;
+}
+
+
+.topPostTable {
+	width: 742px;
+	border: 1px solid rgba(129, 129, 129, 0.2);
+	border-radius: 7px;
+	z-index: 10;
+	margin: 5px 0 0 263px;
+}
+
+.topPostTable td {
+	padding: 5px 5px 10px 5px;
+	border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+}
+
+.questions {
+	color: #397bc9;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.questions:hover {
+	color: #489afa;
+}
+
+.postDate {
+	color: #6a737c;
+	font-size: 13px;
+}
+
+.greenNumber {
+	border: hidden;
+	border-radius: 4px;
+	background-color: #5eba7d;
+	padding: 5px;
+	color: white;
+	font-size: 12px;
+	margin: 0 10px 15px 0;
+}
+
+.green img {
+	width: 20px;
+	padding: 10px 5px 3px 5px;
+}
+
+.greyNumber {
+	border: 1px solid rgba(129, 129, 129, 0.4);
+	border-radius: 4px;
+	background-color: transparent;
+	padding: 5px;
+	color: black;
+	font-size: 12px;
+	margin: 0 10px 15px 0;
+}
+
+.grey img {
+	width: 20px;
+	padding: 10px 5px 3px 5px;
+}
+
+.topMetaFlex {
+	display: flex;
+}
+
+.topMetaPost {
+	padding: 20px 0 5px 263px;
+	font-size: 21px;
+}
+
+.metaPostImage img {
+	padding-top: 27px;
+	margin-left: 525px;
+	width: 75px;
+}
+
+
+.topNetworkFlex {
+	display: flex;
+}
+
+.topNetworkPost {
+	padding: 20px 0 5px 263px;
+	font-size: 21px;
+}
+
+
+.networkPostView {
+	margin-top: 35px;
+	padding-left: 450px;
+	color: #818181;
+	font-size: 12.5px;
+	cursor: pointer;
+}
+
+.topNetworkTable {
+	width: 742px;
+	border: 1px solid rgba(129, 129, 129, 0.2);
+	border-radius: 7px;
+	z-index: 10;
+	margin: 5px 0 20px 263px;
+}
+
+.topNetworkTable td {
+	padding: 5px 5px 10px 5px;
+	border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+}
+
+.footer {
+	display: flex;
+	background-color: #232629;
+	color: #babfc4;
+	font-size: 13px;
+}
+
+.footer h4 {
+	color: #babfc4;
+	font-size: 13px;
+	font-weight: 780;
+	margin: 25px 25px 15px 20px;
+	cursor: pointer;
+}
+
+.footer p {
+	font-size: 13px;
+	padding: 5px 5px 5px 25px;
+	font-weight: 100;
+	cursor: pointer;
+}
+
+.footerLogo img {
+	width: 35px;
+	padding: 20px 0 0 50px;
+	cursor: pointer;
+}
+
+.footerProduct {
+	padding-left: 40px;
+}
+
+.footerCompany {
+	padding-left: 50px;
+}
+
+.footerNetwork {
+	padding-left: 80px;
+}
+
+.footerSocial {
+	font-size: 11px;
+	font-weight: 100;
+	margin: 30px 30px 220px 90px;
+}
+
+.socialSpace {
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+.footerRights {
+	margin: 90px 90px 50px 90px;
+}
+
+.footerRights p {
+	font-size: 11px;
+	font-weight: 100;
+	padding: 0px;
+	margin: 0px;
+	cursor: auto;
+}
+
+.footerRights u {
+	cursor: pointer;
+}
